@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue à Éclat de Cire ✨🕯️</title>
+    <title>Bienvenue aux Éclat de Cire</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffe6ea; /* Doux rose pastel */
+            background-color: #ffd6e0; /* Couleur rose douce */
             color: #5a3e36;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         header {
-            background-color: #d47f91; /* Rose foncé */
+            background-color: #8b5e3b;
             color: white;
             text-align: center;
             padding: 20px;
@@ -39,16 +45,22 @@
         #hero {
             text-align: center;
             padding: 50px;
-            background-color: #ffc2d1; /* Rose clair */
+            background-color: #f5e1da;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #d47f91; /* Rose foncé */
+            background-color: #8b5e3b;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
         }
 
         #products {
@@ -64,6 +76,11 @@
             padding: 15px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
         }
 
         .product img {
@@ -74,7 +91,7 @@
         #contact {
             text-align: center;
             padding: 30px;
-            background-color: #d47f91; /* Rose foncé */
+            background-color: #8b5e3b;
             color: white;
         }
 
@@ -94,56 +111,57 @@
 </head>
 <body>
     <header>
-        <h1>Éclat de Cire ✨🕯️</h1>
+        <h1>Éclat de Cire ✨</h1>
         <nav>
             <ul>
-                <li><a href="#about">À propos 💕</a></li>
-                <li><a href="#products">Bougies 🕯️</a></li>
-                <li><a href="#contact">Contact 📲</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#products">Bougies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero">
-        <h2>🌸 Des bougies artisanales pour toutes les humeurs 🌸</h2>
-        <p>💗 Fabriquées avec de la cire de soja naturelle et des huiles essentielles. 💗</p>
-        <a href="#products" class="btn">🛍️ Achetez maintenant</a>
+        <h2>Des bougies artisanales pour toutes les humeurs 🕯️💖</h2>
+        <p>Fabriquées avec de la cire de soja naturelle et des huiles essentielles.</p>
+        <a href="#products" class="btn">Achetez maintenant 💕</a>
     </section>
 
     <section id="about">
-        <h2>💖 À propos de nous 💖</h2>
-        <p>Bougies fraîches faites à la main avec des ingrédients naturels ! 🌿🕯️</p>
+        <h2>À propos de nous</h2>
+        <p>Bougies fraîches faites à la main avec des ingrédients naturels ! 🌿✨</p>
     </section>
 
     <section id="products">
-        <h2>🌟 Nos bougies 🌟</h2>
+        <h2>Nos bougies 🕯️</h2>
         <div class="product">
             <img src="bougies.jpg" alt="Bougie Fraise">
-            <h3>🍓  strawberry cream</h3>
-            <p>Une bougie gourmande au parfum sucré de fraise et de cheesecake. 🍰</p>
+            <h3>strawberry cream 🍓</h3>
+            <p>Une bougie gourmande au parfum sucré de fraise et de vanille.</p>
             <span>18.- CHF</span>
         </div>
         <div class="product">
             <img src="icecoffe.jpg" alt="Bougie Café Glacé">
-            <h3>☕ ice Coffee</h3>
-            <p>Une merveilleuse odeur de café pour les amateurs de café. 🌿</p>
+            <h3>ice Coffee ☕</h3>
+            <p>Une merveilleuse odeur de café pour les amateurs de café.</p>
             <span>15.- CHF</span>
         </div>
         <div class="product">
             <img src="matcha latte.jpg" alt="Bougie Matcha Latte">
-            <h3>🍵 Iced Matcha Latte</h3>
-            <p>Une belle bougie pour la décoration et les amoureux du thé matcha. ✨</p>
+            <h3>Iced Matcha Latte 🍵</h3>
+            <p>Une belle bougie pour la décoration et les amoureux du thé matcha.</p>
             <span>15.- CHF</span>
         </div>
     </section>
 
     <section id="contact">
-        <h2>📲 Contact 📲</h2>
-        <p>Retrouvez-nous sur Instagram : <a href="https://www.instagram.com/eclat_de_cire1?igsh=dXU4NGFqcTM2aW9y&utm_source=qr" target="_blank">💗 @eclat_de_cire1 💗</a></p>
+        <h2>Contact 📩</h2>
+        <p>Retrouvez-nous sur Instagram : <a href="https://www.instagram.com/bougies_etoilees?igsh=dXU4NGFqcTM2aW9y&utm_source=qr" target="_blank">@bougies_etoilees</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Éclat de Cire ✨ | Handcrafted with Love 💕</p>
+        <p>&copy; 2025 Éclat de Cire | Handcrafted with Love 💕</p>
     </footer>
 </body>
 </html>
+
