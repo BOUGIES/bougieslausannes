@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ffe4e1, #ffcccb);
+            background: linear-gradient(to right, #ffb6c1, #ffd1dc);
             color: #4a2c2a;
             animation: fadeIn 2s ease-in;
         }
@@ -20,29 +20,26 @@
         }
 
         header {
-            background-color: #ff6699;
+            background-color: #ff85a2;
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            animation: slideDown 1s ease-in-out;
         }
 
-        @keyframes slideDown {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        header img {
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
-            text-align: center;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         nav a {
@@ -53,47 +50,43 @@
 
         #hero {
             text-align: center;
-            padding: 60px;
-            background: linear-gradient(to right, #ff99cc, #ff6699);
+            padding: 50px;
+            background-color: #ffcce7;
             animation: fadeIn 2s ease-in-out;
-            color: white;
-            font-size: 20px;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #ff3366;
+            padding: 10px 20px;
+            background-color: #ff85a2;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: transform 0.3s ease-in-out, background-color 0.3s;
+            transition: transform 0.3s ease-in-out;
         }
 
         .btn:hover {
             transform: scale(1.1);
-            background-color: #ff0033;
         }
 
         #products {
             text-align: center;
-            padding: 60px;
-            background: #fff;
+            padding: 50px;
         }
 
         .product {
             display: inline-block;
-            width: 280px;
+            width: 250px;
             margin: 20px;
             background-color: white;
             padding: 15px;
-            border-radius: 15px;
-            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
 
         .product:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
 
         .product img {
@@ -103,8 +96,8 @@
 
         #contact {
             text-align: center;
-            padding: 40px;
-            background-color: #ff6699;
+            padding: 30px;
+            background-color: #ff85a2;
             color: white;
         }
 
@@ -116,15 +109,15 @@
 
         footer {
             text-align: center;
-            padding: 15px;
-            background-color: #e6005c;
+            padding: 10px;
+            background-color: #e57373;
             color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        Éclat de Cire ✨
+        <img src="80BEE2C6-572F-4EA6-AD05-947A236A3B12.png" alt="Éclat de Cire Logo">
         <nav>
             <ul>
                 <li><a href="#about">À propos</a></li>
