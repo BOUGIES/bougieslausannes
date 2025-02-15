@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #f8c1d9, #fde2e4); /* Fond rose élégant et sophistiqué */
+            background: linear-gradient(to right, #ffe4e1, #ffcccb);
             color: #4a2c2a;
             animation: fadeIn 2s ease-in;
         }
@@ -20,20 +20,29 @@
         }
 
         header {
-            background-color: #e67e9c;
+            background-color: #ff6699;
             color: white;
             text-align: center;
             padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            text-align: center;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
 
         nav a {
@@ -44,43 +53,47 @@
 
         #hero {
             text-align: center;
-            padding: 50px;
-            background-color: #fbd3e9;
+            padding: 60px;
+            background: linear-gradient(to right, #ff99cc, #ff6699);
             animation: fadeIn 2s ease-in-out;
+            color: white;
+            font-size: 20px;
         }
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #e67e9c;
+            padding: 12px 24px;
+            background-color: #ff3366;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, background-color 0.3s;
         }
 
         .btn:hover {
             transform: scale(1.1);
+            background-color: #ff0033;
         }
 
         #products {
             text-align: center;
-            padding: 50px;
+            padding: 60px;
+            background: #fff;
         }
 
         .product {
             display: inline-block;
-            width: 250px;
+            width: 280px;
             margin: 20px;
             background-color: white;
             padding: 15px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            border-radius: 15px;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
         }
 
         .product:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
         }
 
         .product img {
@@ -90,8 +103,8 @@
 
         #contact {
             text-align: center;
-            padding: 30px;
-            background-color: #e67e9c;
+            padding: 40px;
+            background-color: #ff6699;
             color: white;
         }
 
@@ -103,15 +116,15 @@
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #d76a89;
+            padding: 15px;
+            background-color: #e6005c;
             color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Éclat de Cire ✨</h1>
+        Éclat de Cire ✨
         <nav>
             <ul>
                 <li><a href="#about">À propos</a></li>
@@ -136,13 +149,13 @@
         <h2>Nos bougies 🕯️</h2>
         <div class="product">
             <img src="bougies.jpg" alt="Bougie Fraise">
-            <h3>strawberry cream 🍓</h3>
+            <h3>Bonheur à la framboise 🍓</h3>
             <p>Une bougie gourmande au parfum sucré de fraise et de vanille.</p>
             <span>18.- CHF</span>
         </div>
         <div class="product">
             <img src="icecoffe.jpg" alt="Bougie Café Glacé">
-            <h3>ice Coffee ☕</h3>
+            <h3>Cold Brew Coffee ☕</h3>
             <p>Une merveilleuse odeur de café pour les amateurs de café.</p>
             <span>15.- CHF</span>
         </div>
